@@ -30,9 +30,9 @@ The personal information that we collect depends on the context of your interact
 
 We do not process sensitive information.
 
-### Social Media Login Data
+### Third Party Login Data
 
-We may provide you with the option to register with us using your existing social media account details, like your Facebook, X, or other social media account. If you choose to register in this way, we will collect certain profile information about you from the social media provider, as described in the section called "**HOW DO WE HANDLE YOUR SOCIAL LOGINS?**" below.
+We may provide you with the option to register with us using your existing Third Party account details, like Google, or other Third Party account. If you choose to register in this way, we will collect certain profile information about you from the Third Party provider, as described in the section called "**HOW DO WE HANDLE YOUR THIRD PARTY LOGINS?**" below.
 
 ### Application Data
 
@@ -74,13 +74,13 @@ We don't use tracking technologies. We may use cookies and other tracking techno
 
 ---
 
-## 5. HOW DO WE HANDLE YOUR SOCIAL LOGINS?
+## 5. HOW DO WE HANDLE YOUR THIRD PARTY LOGINS?
 
-**In Short:** If you choose to register or log in to our Services using a social media account, we may have access to certain information about you.
+**In Short:** If you choose to register or log in to our Services using a Third Party account, we may have access to certain information about you.
 
-Our Services offer you the ability to register and log in using your third-party social media account details (like Google). Where you choose to do this, we will receive certain profile information about you from your social media provider. The profile information we receive may vary depending on the social media provider concerned, but will often include your name, email address and profile picture.
+Our Services offer you the ability to register and log in using your third-party account details (like Google). Where you choose to do this, we will receive certain profile information about you from your Third Party provider. The profile information we receive may vary depending on the Third Party provider concerned, but will often include your name, email address and profile picture.
 
-We will use the information we receive only for the purposes that are described in this Privacy Notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party social media provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.
+We will use the information we receive only for the purposes that are described in this Privacy Notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party Third Party provider. We recommend that you review their privacy notice to understand how they collect, use, and share your personal information, and how you can set your privacy preferences on their sites and apps.
 
 ---
 

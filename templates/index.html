@@ -6,8 +6,8 @@
       <div class="container">
         <div class="row align-items-center min-vh-75">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4 mt-2">Play Chess Tournaments at Local Venues</h1>
-            <p class="lead mb-4">Open to all levels. Free to play. Win prizes.</p>
+            <h1 class="display-4 fw-bold mb-4 mt-2">Play Chess In Real Life at Local Venues</h1>
+            <h3 class="mb-4">Open to all levels. Free to play.</h3>
             <div class="d-flex flex-wrap gap-3">
               <a href="https://lu.ma/tbchess" class="btn btn-primary btn-lg">
                 <i class="bi bi-calendar-event me-2"></i>Discover Events
@@ -15,11 +15,17 @@
             </div>
 
             <div class="mt-4">
-              <p>Bar or cafe owner?</p>
-              <a href="/hosts" class="btn btn-outline-primary btn-md">
-                TB Chess for Hosts
+              <p>Meetup Organizer?</p>
+              <a href="/meetups" class="btn btn-outline-primary btn-md">
+                TB Chess for Meetups
               </a>
             </div>
+            <!-- <div class="mt-4">
+               <p>Bar or cafe owner?</p>
+               <a href="/hosts" class="btn btn-outline-primary btn-md">
+                 TB Chess for Hosts
+               </a>
+            </div> -->
           </div>
           <div class="col-lg-6 text-center">
             <img src="/venue.jpg"
@@ -36,29 +42,30 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title">A Modern Chess Experience</h2>
-                    <p class="section-subtitle">Experience a novel approach to playing chess tournaments with our modern platform and welcoming community</p>
+                    <div class="mt-4 mb-4"><a href="https://app.tbchess.org"><img alt="Chess app screenshot" src="/images/app-screenshot.png" /></a></div>
+                    <p class="section-subtitle">Experience a novel approach to playing chess in real life with our modern platform</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="bi bi-people-fill feature-icon"></i>
-                        <h4 class="fw-bold mb-3">Inclusive Community</h4>
-                        <p class="text-muted">We welcome players of all skill levels from beginners to grandmasters.</p>
+                        <h4 class="fw-bold mb-3">Local Play</h4>
+                        <p class="text-muted">Play with people in real life</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="bi bi-trophy-fill feature-icon"></i>
                         <h4 class="fw-bold mb-3">Tournaments</h4>
-                        <p class="text-muted">Participate in exciting tournaments with real-time score tracking and automated pairings through our mobile app.</p>
+                        <p class="text-muted">Join exciting matches with automated pairings, score tracking and leaderboards</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="bi bi-star-fill feature-icon"></i>
                         <h4 class="fw-bold mb-3">Always Free</h4>
-                        <p class="text-muted">Our events are free of charge. We only encourage people to buy something from the hosting venue.</p>
+                        <p class="text-muted">Events are free of charge. We only encourage people to buy something from the hosting venue</p>
                     </div>
                 </div>
             </div>
@@ -67,11 +74,22 @@
                     <div class="feature-card text-center">
                         <i class="bi bi-github feature-icon"></i>
                         <h4 class="fw-bold mb-3">Open Source</h4>
-                        <p class="text-muted">Our <a href="https://github.com/TBChess/TBChess">platform</a> is free and open source software, just like Lichess. Made by players, for the players.</p>
+                        <p class="text-muted">Our <a href="https://github.com/TBChess/TBChess">tournament software</a> is free and open source (like Lichess), made by players, for the players</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Available in St. Petersburg, FL</h2>
+                    <p class="section-subtitle">More cities coming soon! <a href="/meetups">Bring it to yours</a></p>
+                </div>
+            </div>
+        </div>
+      </section>
 
 {% endblock content %}
