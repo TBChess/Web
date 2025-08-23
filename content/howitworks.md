@@ -11,6 +11,10 @@ title = "Our Events - Frequently Asked Questions"
         <p>You do not. Our events are open to everyone. We have experienced players as well as beginners, and everyone in between.</p>
     </div>
     <div class="mb-4">
+        <h2 class="h5 fw-bold">I've never played a chess tournament. Is it for me?</h2>
+        <p>If you like chess, you'll love our tournament format. You'll get to play chess with different opponents, learn how to use a clock and level up your chess game!</p>
+    </div> 
+    <div class="mb-4">
         <h2 class="h5 fw-bold">Does it cost anything?</h2>
         <p>No. All of our events are free to participate. We do encourage people to purchase something from the hosting venue, so if you get thirsty grab a beverage!</p>
     </div>
@@ -34,6 +38,10 @@ title = "Our Events - Frequently Asked Questions"
         <h2 class="h5 fw-bold">Who runs the tournament?</h2>
         <p>Our <a href="https://app.tbchess.org">mobile app</a> assigns the pairs, compute the scores and makes the tournament go fast. If you've never experienced it, you have to try it.</p>
     </div> 
+    <div class="mb-4">
+        <h2 class="h5 fw-bold">Do I need to bring anything?</h2>
+        <p>If you have a chess board, bring it! If not, other players will likely have one. Bring a chess clock if you have one. If not, no worries. Our mobile app provides a clock that works on your phone.</p>
+    </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">When should I register?</h2>
         <p>To guarantee a spot, as soon as possible: we have limited spots due to the number of tables available at venues and it's first-come first-serve. You can <a href="https://lu.ma/tbchess">register here</a>.</p>
