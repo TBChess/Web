@@ -36,7 +36,7 @@ title = "How It Works - Frequently Asked Questions"
     </div> 
     <div class="mb-4">
         <h2 class="h5 fw-bold">Do I need to bring anything?</h2>
-        <p>Bring a chess board? If not, no worries. Other players will likely have one. Bring a chess clock if you have one too.</p>
+        <p>Bring a chess board. If you don't have one, no worries. Other players will likely have one.</p>
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">When should I register?</h2>
