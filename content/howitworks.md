@@ -31,10 +31,6 @@ title = "How It Works - Frequently Asked Questions"
         <p>☝️</p>
     </div>
     <div class="mb-4">
-        <h2 class="h5 fw-bold">What's this tournament stuff?</h2>
-        <p>Sometimes we use our <a href="https://app.tbchess.org">mobile app</a> to play games in a more structured fashion, so nobody stresses out about when to switch boards. The app tells you who to play against. It's pretty cool actually. We even give away prizes sometimes.</p>
-    </div> 
-    <div class="mb-4">
         <h2 class="h5 fw-bold">Do I need to bring anything?</h2>
         <p>Bring a chess board. If you don't have one, no worries. Other players will likely have one.</p>
     </div>

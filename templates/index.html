@@ -6,19 +6,19 @@
       <div class="container">
         <div class="row align-items-center min-vh-75">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4 mt-2">Play Chess <span id="title-location">at Local Venues</span></h1>
+            <h1 class="display-4 fw-bold mb-4 mt-2">Social Chess Events in St. Pete</h1>
             <script>
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('c') === 'sp') {
               document.getElementById('title-location').textContent = 'in St. Pete';
             }
             </script>
-            <h3 class="mb-4">Connect, play chess and hang out.</h3>
+            <h3 class="mb-4">Hang out. Play chess. Make friends.</h3>
             <div class="d-flex flex-wrap gap-3 mb-4">
               <a href="https://lu.ma/tbchess" class="btn btn-primary btn-lg">
                 <i class="bi bi-calendar-event me-2"></i>Discover Events
               </a><a href="/howitworks" class="btn btn-outline-primary btn-lg">
-                <i class="bi bi-info-circle me-2"></i>How It Works
+                <i class="bi bi-info-circle me-2"></i>First Timer?
               </a>
             </div>
 
@@ -64,7 +64,7 @@
       ></iframe>
     </section>
 
-    <section id="about" class="section-padding bg-light">
+    <section id="about" class="section-padding bg-light mb-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
@@ -108,17 +108,17 @@
         </div>
     </section>
 
-    <section id="about" class="section-padding bg-light">
+    <!-- <section id="about" class="section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center mb-4">
                     <h2 class="section-title">Cities</h2>
                     
                     <p>♖ St. Petersburg FL</p>
-                    <p>More cities coming soon!</p> <!--<a href="/meetups">Bring it to yours</a></p>-->
+                    <p>More cities coming soon!</p>
                 </div>
             </div>
         </div>
-      </section>
+      </section> -->
 
 {% endblock content %}
