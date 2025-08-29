@@ -5,9 +5,8 @@ title = "Chess Meetup Organizers"
 <div class="text-center">
     <h1 class="display-4 fw-bold  mb-4">Make Your Chess Meetup Even More Awesome</h1>
     <h4 class="text-muted mb-4">Host a micro chess tournament. It's fun for existing members and brings new players</h4>
-    <p class="fs-5 text-secondary mb-4">It's <strong>free</strong>! We'll even provide prizes *</p>
+    <p class="fs-5 text-secondary mb-4">It's <strong>free</strong>!</p>
     <a href="https://forms.gle/CSw7hiNgGtMrdBAu7" class="btn btn-primary btn-lg px-4 py-3"><i class="bi bi-trophy-fill  me-2"></i>Host a Micro Tournament</a>
-    <p class="mt-4"><small>* Prizes currently available only for events in the Tampa Bay area</small></p>
 </div>
 
 
