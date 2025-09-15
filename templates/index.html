@@ -6,14 +6,14 @@
       <div class="container">
         <div class="row align-items-center min-vh-75">
           <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4 mt-2">Social Chess Events in St. Pete</h1>
+            <h1 class="display-4 fw-bold mb-4 mt-2">The Social Chess League in St. Pete</h1>
             <script>
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.get('c') === 'sp') {
               document.getElementById('title-location').textContent = 'in St. Pete';
             }
             </script>
-            <h3 class="mb-4">Hang out. Play chess. Make friends.</h3>
+            <h3 class="mb-4">Hang out. Play chess. Claim your crown. <img src="/images/crown.svg" alt="Crown" style="width: 28px; position: relative; top: -4px;"/></h3>
             <div class="d-flex flex-wrap gap-3 mb-4">
               <a href="https://lu.ma/tbchess" class="btn btn-primary btn-lg">
                 <i class="bi bi-calendar-event me-2"></i>Discover Events
@@ -36,7 +36,7 @@
             </div> -->
           </div>
           <div class="col-lg-6 text-center">
-            <img src="/venue.jpg"
+            <img src="/venue3.jpg"
               style="max-height: 420px" 
                alt="Chess Tournament" 
                class="img-fluid rounded-4 shadow">
@@ -64,49 +64,138 @@
       ></iframe>
     </section>
 
+
+     <section class="section-padding mb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mb-3">
+            <h2 class="section-title">Current Champions</h2>
+          </div>
+        </div>
+        <div x-data="{ 
+          venues: [],
+          error: '',
+          api: 'http://192.168.2.253:4090',
+          //api: 'https://app.tbchess.org',
+          getImage(url){
+            return this.api + url + '?thumb=80';
+          },
+          formatDate(timestamp){
+            return new Date(timestamp).toLocaleDateString();
+          },
+          async fetchWinners() {
+            try {
+              const response = await fetch(`${this.api}/api/collections/venue_winners/records?skipTotal=true`);
+              this.venues = (await response.json()).items;
+            } catch (error) {
+              this.error = error.message;
+            }
+          }
+        }" 
+        x-init="fetchWinners()">
+          <div x-show="venues.length === 0 && !error" class="text-center py-4">
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2 text-muted">Loading...</p>
+          </div>
+          
+          <div x-show="error" class="text-center py-4">
+            <div class="alert alert-danger" role="alert">
+              <i class="bi bi-exclamation-triangle me-2"></i>
+              <span x-text="error"></span>
+            </div>
+          </div>
+          
+          <div class="row justify-content-center mb-4">
+              <template x-for="venue in venues">
+              <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm h-100">
+                 <div class="card-body text-center p-4">
+                   
+                   <div class="venue-logo mb-3">
+                     <img x-bind:src="getImage(venue.logo)" alt="Venue Logo" class="img-fluid" style="max-height: 80px;">
+                    </div>
+                     <h5 class="card-title fw-bold" x-text="venue.name"></h5>
+                    <div class="champion-info mt-4">
+                      <div class="d-flex align-items-center justify-content-center mb-2">
+                        <img src="/images/crown.svg" alt="Crown" class="me-2" style="width: 24px;">
+                        <h4 class="mb-0 fw-bold text-primary" x-text="venue.player_name"></h4>
+                      </div>
+                      <p class="mb-2" x-text="`TB Chess Rating: ${venue.player_elo}`"></p>
+                      <p class="text-muted mb-2" x-text="`Last crowned ${formatDate(venue.event_date)}`"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+      </div>
+    </section>
+
     <section id="about" class="section-padding bg-light mb-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="section-title">A Novel Chess Experience</h2>
+                    <h2 class="section-title">Become The Venue's Champion</h2>
                     <div class="mt-4 mb-4"><a href="https://app.tbchess.org"><img alt="Chess app screenshot" src="/images/app-screenshot.png" style="max-width: 100%"/></a></div>
-                    <p class="section-subtitle">Play chess in real life and meet new friends</p>
+                    <a href="https://app.tbchess.org" class="btn btn-primary btn-lg mb-4">
+                      <i class="bi bi-phone me-2"></i>Open the App
+                    </a>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <i class="bi bi-people-fill feature-icon"></i>
-                        <h4 class="fw-bold mb-3">Local Play</h4>
-                        <p class="text-muted">Play chess with people in real life</p>
+                        <i class="bi bi-calendar-event feature-icon"></i>
+                        <h4 class="fw-bold mb-3">Play Chess</h4>
+                        <p class="text-muted">With people, in real life</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <i class="bi bi-heart-fill feature-icon"></i>
-                        <h4 class="fw-bold mb-3">Connect</h4>
-                        <p class="text-muted">Our events are open to everyone. Meet like minded players.</p>
+                        <i class="bi bi-people-fill feature-icon"></i>
+                        <h4 class="fw-bold mb-3">Open to Everyone</h4>
+                        <p class="text-muted">All skill levels are welcome. Meet like minded players</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="feature-card text-center">
                         <i class="bi bi-controller feature-icon"></i>
-                        <h4 class="fw-bold mb-3">Play Tournaments</h4>
-                        <p class="text-muted">Our micro tournaments are casual, laid back and fun</p>
+                        <h4 class="fw-bold mb-3">Micro Tournaments</h4>
+                        <p class="text-muted">Our tournaments are casual, laid back and fun (and don't take a whole day)</p>
                     </div>
                 </div>
             </div>
-            <!-- <div class="row g-4 mt-3">
-              <div class="col-md-4 offset-md-4">
+            <div class="row g-4 mt-3">
+              <div class="col-md-4">
                     <div class="feature-card text-center">
-                        <i class="bi bi-github feature-icon"></i>
-                        <h4 class="fw-bold mb-3">Open Source</h4>
-                        <p class="text-muted">Our <a href="https://github.com/TBChess/TBChess">micro tournament software</a> is free and open source (like Lichess), made by players, for the players</p>
+                        <i class="bi bi-gift-fill feature-icon"></i>
+                        <h4 class="fw-bold mb-3">Prizes</h4>
+                        <p class="text-muted">Win gift cards and free beverages</p>
                     </div>
-                </div>
-            </div> -->
+              </div>
+              <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="bi bi-trophy-fill feature-icon"></i>
+                        <h4 class="fw-bold mb-3">Claim Your Crown</h4>
+                        <p class="text-muted">Every venue has a crown. Will it be yours?</p>
+                    </div>
+              </div>
+              <div class="col-md-4">
+                    <div class="feature-card text-center">
+                        <i class="bi bi-check-circle feature-icon"></i>
+                        <h4 class="fw-bold mb-3">Free</h4>
+                        <p class="text-muted">All our events are free of charge. We only encourage people to purchase a beverage from the hosting venue</p>
+                    </div>
+              </div>
+            </div>
         </div>
     </section>
+
+   
 
     <!-- <section id="about" class="section-padding bg-light">
         <div class="container">
