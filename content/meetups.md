@@ -1,12 +1,12 @@
 +++
-title = "Chess Meetup Organizers"
+title = "Chess Club Organizers"
 +++
 
 <div class="text-center">
-    <h1 class="display-4 fw-bold  mb-4">Make Your Chess Meetup Even More Awesome</h1>
-    <h4 class="text-muted mb-4">Host a micro chess tournament. It's fun for existing members and brings new players</h4>
-    <p class="fs-5 text-secondary mb-4">It's <strong>free</strong>!</p>
-    <a href="https://forms.gle/CSw7hiNgGtMrdBAu7" class="btn btn-primary btn-lg px-4 py-3"><i class="bi bi-trophy-fill  me-2"></i>Host a Micro Tournament</a>
+    <h1 class="display-4 fw-bold  mb-4">Simplify Your Next Chess Tournament</h1>
+    <h4 class="text-muted mb-4"></h4>
+    <p class="fs-5 text-secondary mb-4">Streamline chess tournaments with automated pairings, leaderboards and self-reporting. It's <strong>free</strong>!</p>
+    <a href="https://forms.gle/CSw7hiNgGtMrdBAu7" class="btn btn-primary btn-lg px-4 py-3"><i class="bi bi-trophy-fill  me-2"></i>Host a tournament from the TB Chess app</a>
 </div>
 
 
@@ -38,6 +38,11 @@ title = "Chess Meetup Organizers"
                         <h4 class="fw-bold mb-3">3. Play</h4>
                         <p class="text-muted">At game time, the software assigns the pairings, asks players to report the scores and calculates the standings.</p>    
                     </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-12 text-center">
+                    Reduce tournament organization logistics. FIDE swiss and round-robin pairings, real-time automated leaderboards, player registration and self-reporting.
                 </div>
             </div>
             <div class="row g-4 mt-4">
@@ -78,4 +83,4 @@ title = "Chess Meetup Organizers"
             </div>
         </div>
     </section>
-    <div class="text-center"><a href="https://forms.gle/CSw7hiNgGtMrdBAu7" class="btn btn-primary btn-lg px-4 py-3"><i class="bi bi-trophy-fill  me-2"></i>Host a Micro Tournament</a></div>
+    <div class="text-center"><a href="https://forms.gle/CSw7hiNgGtMrdBAu7" class="btn btn-primary btn-lg px-4 py-3"><i class="bi bi-trophy-fill  me-2"></i>Host a tournament from the TB Chess app</a></div>
