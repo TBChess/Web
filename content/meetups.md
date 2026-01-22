@@ -96,7 +96,7 @@ title = "Chess Club Organizers"
                             <div class="col-md-6 col-lg-4">
                                 <div class="feature-badge d-flex align-items-center p-3 bg-light rounded-3">
                                     <i class="bi bi-lightning-charge-fill text-primary fs-4 me-3"></i>
-                                    <span class="fw-semibold">Automated Process</span>
+                                    <span class="fw-semibold">Fully Automated </span>
                                 </div>
                             </div>
                         </div>
