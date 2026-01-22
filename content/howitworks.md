@@ -36,7 +36,7 @@ title = "How It Works - Frequently Asked Questions"
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">Who gets a crown?</h2>
-        <p>Win a micro tournament to stake your name as the king/queen of a venue.</p>
+        <p>Win a tournament to stake your name as the king/queen of a venue.</p>
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">Are there prizes?</h2>
