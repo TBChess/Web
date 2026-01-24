@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loading...</title>
+</head>
+<body>
+    <p>Loading the event page... please wait!</p>
+
+    <script>
+    window.addEventListener('load', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const venue = urlParams.get('venue');
+        
+        if (!venue) {
+            window.location.href = 'https://app.tbchess.org/#/events';
+            return;
+        }
+        
+        const apiUrl = `https://app.tbchess.org/api/collections/events_list/records?page=1&perPage=500&filter=finished+%3D+0&sort=-event_date&venue=${encodeURIComponent(venue)}&skipTotal=true`;
+        
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.items && data.items.length > 0) {
+                    const eventId = data.items[0].id;
+                    window.location.href = `https://app.tbchess.org/#/event/${eventId}?p=1`;
+                } else {
+                    window.location.href = 'https://app.tbchess.org/#/events';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching event data:', error);
+                window.location.href = 'https://app.tbchess.org/#/events';
+            });
+    });
+    </script>
+</body>
+</html>
