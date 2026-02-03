@@ -9,12 +9,12 @@
     <script>
     window.addEventListener('load', function() {
         const urlParams = new URLSearchParams(window.location.search);
-        const venue = urlParams.get('venue');
+        const venue = '';//urlParams.get('venue');
         
-        if (!venue) {
-            window.location.href = 'https://app.tbchess.org/#/events';
-            return;
-        }
+        // if (!venue) {
+        //     window.location.href = 'https://app.tbchess.org/#/events';
+        //     return;
+        // }
         
         const apiUrl = `https://app.tbchess.org/api/collections/events_list/records?page=1&perPage=500&filter=finished+%3D+0&sort=-event_date&venue=${encodeURIComponent(venue)}&skipTotal=true`;
         
