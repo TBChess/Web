@@ -4,7 +4,7 @@ title = "How It Works - Frequently Asked Questions"
 
 <div class="text-center">
     <h1 class="display-4 fw-bold  mb-4">Thinking of Joining an Event?</h1>
-    <h2 class="text-muted mb-4"> Cool. Here's some frequently asked questions:</h2>
+    <h2 class="text-muted mb-4"> Here's some frequently asked questions:</h2>
 </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">Do I need to be a good chess player to participate? I'm not that good.</h2>
@@ -12,7 +12,7 @@ title = "How It Works - Frequently Asked Questions"
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">What's the atmosphere like?</h2>
-        <p>Chill.</p>
+        <p>Chill, friendly, fun.</p>
     </div> 
     <div class="mb-4">
         <h2 class="h5 fw-bold">Does it cost anything?</h2>
@@ -35,8 +35,8 @@ title = "How It Works - Frequently Asked Questions"
         <p>Bring a chess board. If you don't have one, no worries. Other players will likely have one.</p>
     </div>
     <div class="mb-4">
-        <h2 class="h5 fw-bold">Who gets a crown?</h2>
-        <p>Win a tournament to stake your name as the king/queen of a venue.</p>
+        <h2 class="h5 fw-bold">How do I become champion?</h2>
+        <p>Win one of our tournaments to stake your name as the king/queen of a venue.</p>
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">Are there prizes?</h2>
@@ -44,6 +44,6 @@ title = "How It Works - Frequently Asked Questions"
     </div>
     <div class="mb-4">
         <h2 class="h5 fw-bold">When should I register?</h2>
-        <p>If you think there's even a 1% chance you'll be coming, <a href="https://lu.ma/tbchess">register right away</a>. You can always cancel later. But at least you'll have the spot reserved.</p>
+        <p><a href="https://lu.ma/tbchess">Register right away</a>. You can always cancel later. But at least you'll have the spot reserved.</p>
     </div>
       
